@@ -9,144 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>DJ Vickey - NYC Event DJ Services</title>
     </head>
-        <style> 
-        :root {
-            --bg:#0f1724;
-            --card:#0b1220;
-            --accent:#ff5f6d;
-            --accent2:#ffc371;
-            --muted:#95a3b8;
-            --glass: rgba(255,255,255,0.04);
-            --maxw:1100px;
-            font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-        }
-        *{box-sizing:border-box}
-        html,body{height:100%}
-        body{
-            background:linear-gradient(180deg,#071024 0%, #081226 50%, #08141c 100%);
-            color:#e6eef8;
-            -webkit-font-smoothing:antialiased;
-            -moz-osx-font-smoothing:grayscale;
-            line-height:1.4;
-            display:flex;
-            justify-content:center;
-            padding:40px 20%;
-            background-repeat: no-repeat;
-            background-size: cover;
-            -webkit-background-size: cover;
-            background-attachment: fixed;
-            transition: all 0.8s ease-in-out;
-        }
-        .wrap{
-            width:100%;
-            max-width:var(--maxw);
-        }
-        header{
-            display:flex;
-            align-items:center;
-            justify-content:space-between;
-            gap:16px;
-            margin-bottom:28px;
-        }
-        .brand{
-            display:flex;
-            gap:12px;
-            align-items:center;
-            text-decoration:none;
-            color:inherit;
-        }
-        .logo{
-            width:54px;
-            height:54px;
-            border-radius:10px;
-            background:linear-gradient(135deg,var(--accent),var(--accent2));
-            display:grid;
-            place-items:center;
-            font-weight:700;
-            color:#0b1220;
-            box-shadow: 0 6px 18px rgba(255,95,109,0.12);
-            flex:0 0 54px;
-        }
-        nav{display:flex;gap:14px;align-items:center}
-        nav a{color:var(--muted);text-decoration:none;font-weight:600;font-size:15px}
-        nav a.cta{background:linear-gradient(90deg,var(--accent),var(--accent2));padding:10px 14px;border-radius:10px;color:#07121c}
-        main{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:start}
-        @media (max-width:920px){ main{grid-template-columns:1fr} header{flex-direction:column;align-items:flex-start} }
-        .hero{
-            background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
-            border-radius:14px;
-            padding:28px;
-            box-shadow: 0 8px 30px rgba(3,8,20,0.6);
-        }
-        .hero h1{margin:0 0 8px;font-size:30px}
-        .hero p{margin:0 0 18px;color:var(--muted)}
-        .cta-row{display:flex;gap:12px;flex-wrap:wrap}
-        .btn{
-            padding:12px 16px;
-            border-radius:10px;
-            border:0;
-            cursor:pointer;
-            font-weight:700;
-            color:#07121c;
-            background:linear-gradient(90deg,var(--accent),var(--accent2));
-            box-shadow: 0 8px 20px rgba(255,95,109,0.12);
-        }
-        .btn.ghost{background:transparent;color:var(--muted);border:1px solid rgba(255,255,255,0.04)}
-        .services{
-            display:grid;
-            grid-template-columns:repeat(3,1fr);
-            gap:12px;
-            margin-top:18px;
-        }
-        @media (max-width:600px){ .services{grid-template-columns:repeat(1,1fr)} }
-
-        .card{
-            background:var(--card);
-            padding:16px;
-            border-radius:12px;
-            min-height:92px;
-            display:flex;
-            gap:12px;
-            align-items:center;
-        }
-        .icon{
-            width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,#1f2937,#0b1220);display:grid;place-items:center;font-weight:700;color:var(--accent2);
-        }
-        .card h4{margin:0 0 6px;font-size:15px}
-        .card p{margin:0;color:var(--muted);font-size:13px}
-      
-        .panel{
-            background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
-            border-radius:14px;
-            padding:18px;
-            position:sticky;
-            top:24px;
-        }
-        form{display:flex;flex-direction:column;gap:10px}
-        label{font-size:13px;color:var(--muted)}
-        input,select,textarea{
-            padding:10px 12px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);
-            background:transparent;color:inherit;font-size:14px;outline:none;
-        }
-        textarea{min-height:100px;resize:vertical}
-        .row{display:flex;gap:8px}
-        .row .col{flex:1}
-        .muted{font-size:13px;color:var(--muted);margin-top:6px}
-        .success{background:linear-gradient(90deg,#22c55e33,#16a34a22);padding:12px;border-radius:10px;color:#a7f3d0;font-weight:600;margin-top:8px}
-        footer{margin-top:28px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
-        .social a{color:var(--muted);text-decoration:none;margin-left:8px}
-        small{opacity:0.9}
-
-      
-        .gallery{margin-top:18px; display:grid; grid-template-columns:repeat(2,1fr); gap:12px}
-        @media (max-width:1920px){ .gallery{grid-template-columns:1fr} body {
-            padding:40px 20px;
-        }}
-        .media-card{background:var(--card);padding:12px;border-radius:12px}
-        .media-card h4{margin:0 0 8px;font-size:15px}
-        .embed{position:relative;padding-top:250px;border-radius:8px;overflow:hidden}
-        .embed iframe{position:absolute;left:0;top:0;width:100%;height:200px;border:0}
-    </style>
+        <link rel="stylesheet" href="style.css" />
 
             <section class="hero">
                 <h1>Make your event unforgettable</h1>
@@ -190,8 +53,6 @@
                 <div id="listen" style="margin-top:18px">
                     <h3 style="margin:0 0 12px">Listen to mixes</h3>
                     <div class="gallery">
-                <div class="media-card
-                </div>
                 <div class="media-card">
                     <h4>SoundCloud Mix — Demo</h4>
                     <div class="embed">
@@ -255,56 +116,7 @@
 </section>
 
 
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  const form = document.getElementById('bookingForm');
-  const success = document.getElementById('bookingSuccess');
-  if (!form) return;
-
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    const data = {
-      name: (form.name.value || '').trim(),
-      email: (form.email.value || '').trim(),
-      phone: (form.phone.value || '').trim(),
-      date: form.date.value || '',
-      guests: form.guests.value || '',
-      type: form.type.value || '',
-      notes: form.notes.value || ''
-    };
-
-    if (!data.name || !data.email) {
-      alert('Please provide your name and email.');
-      return;
-    }
-
-    const subject = `Booking request — ${data.name} (${data.type || 'Event'})`;
-    const body = [
-      `Name: ${data.name}`,
-      `Email: ${data.email}`,
-      `Phone: ${data.phone}`,
-      `Date: ${data.date}`,
-      `Guests: ${data.guests}`,
-      `Type: ${data.type}`,
-      '',
-      'Notes:',
-      data.notes
-    ].join('\n');
-
-    const mailto = `mailto:sarfarazvickey@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
- 
-    window.location.href = mailto;
-
-    if (success) {
-      success.textContent = 'A draft email should open in your mail app. Press Send to complete the request.';
-      success.style.display = 'block';
-      success.scrollIntoView({ behavior: 'smooth' });
-    }
-  });
-});
-</script>
+<script src="book.js"></script>
 
 
 <footer>
@@ -314,24 +126,5 @@ document.addEventListener('DOMContentLoaded', function () {
     <a href="https://soundcloud.com/vickeysarfaraz168" target="_blank" aria-label="SoundCloud">SC</a>
   </div>
 </footer>
-
-</body>
-</html>
-
-              
-
-                           
-                        
-                    
-                </script>
-
-</body>
-</html>
-                        </div>
-                    </div>
-                </div>
-
-    </script>
-
 </body>
 </html>
